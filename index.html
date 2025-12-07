@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio — Thamyris Sfredo</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <h1 class="logo">Thamyris Sfredo</h1>
+      <button id="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav id="nav">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+        <button id="theme-toggle" aria-label="Alternar tema">Tema</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre" class="section container">
+      <h2>Sobre mim</h2>
+      <p>Sou geógrafa com mais de 11 anos de experiência em geoprocessamento...</p>
+      <ul class="contatos">
+        <li>Email: <a href="mailto:thamy_stephany@yahoo.com.br">thamy_stephany@yahoo.com.br</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/thamyris-sfredo">/in/thamyris-sfredo</a></li>
+      </ul>
+    </section>
+
+    <section id="formacao" class="section container">
+      <h2>Formação</h2>
+      <ul>
+        <li><strong>UNINTER</strong> — Tecnólogo (Ciência de Dados) — 2025–2027 (em curso)</li>
+        <li><strong>PUC Minas</strong> — Pós-graduação em Geoprocessamento (2021–2023)</li>
+        <li><strong>UTP</strong> — Bacharel em Geografia (2009–2012)</li>
+      </ul>
+    </section>
+
+    <section id="portfolio" class="section container">
+      <h2>Portfólio</h2>
+      <ul class="cards">
+        <li class="card"><a href="#">Mapeamento temático — Exemplo</a></li>
+        <li class="card"><a href="#">Análises multitemporais — Exemplo</a></li>
+        <li class="card"><a href="#">Cadastro Ambiental Rural — Exemplo</a></li>
+      </ul>
+    </section>
+
+    <section id="contato" class="section container">
+      <h2>Contato</h2>
+      <form id="contact-form" novalidate>
+        <label>Nome
+          <input type="text" id="nome" name="nome" required>
+        </label>
+        <label>Email
+          <input type="email" id="email" name="email" required>
+        </label>
+        <label>Mensagem
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </label>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+      <div id="feedback"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="ano"></span> Thamyris Sfredo — Portfólio pessoal</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
